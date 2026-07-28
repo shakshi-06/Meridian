@@ -1,0 +1,18 @@
+[package]
+name = "node_registry"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+doctest = false
+
+[dependencies]
+soroban-sdk = "21.7.0"
+
+[dev-dependencies]
+soroban-sdk = { version = "21.7.0", features = ["testutils"] }
+
+[features]
+testutils = ["soroban-sdk/testutils"]
