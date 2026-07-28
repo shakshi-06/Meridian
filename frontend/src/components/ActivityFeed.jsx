@@ -7,8 +7,6 @@ import './ActivityFeed.css';
 const POLL_MS = 12000;
 
 function describe(event) {
-  const short = (addr) => (typeof addr === 'string' ? `${addr.slice(0, 4)}…${addr.slice(-4)}` : addr);
-
   switch (event.label) {
     case 'reg_node': {
       const [id, country] = Array.isArray(event.value) ? event.value : [];
