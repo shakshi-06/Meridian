@@ -1,0 +1,46 @@
+.how {
+  padding: 56px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.how-title {
+  font-size: 26px;
+  margin: 10px 0 32px;
+}
+
+.how-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.how-step {
+  background: var(--surface);
+  padding: 24px;
+}
+
+.how-step-n {
+  color: var(--data);
+  font-size: 12px;
+}
+
+.how-step-title {
+  font-size: 16.5px;
+  margin: 10px 0 8px;
+}
+
+.how-step-body {
+  color: var(--text-muted);
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+
+@media (max-width: 780px) {
+  .how-grid {
+    grid-template-columns: 1fr;
+  }
+}
