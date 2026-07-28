@@ -35,7 +35,7 @@ function decodeEvent(raw) {
     const label = topics[0] ?? 'event';
     return {
       id: raw.id,
-      ledger: raw.ledgerClosedAt ? raw.ledger : raw.ledger,
+      ledger: raw.ledger,
       closedAt: raw.ledgerClosedAt,
       contractId: raw.contractId,
       label: String(label),
