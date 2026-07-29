@@ -10,12 +10,16 @@
 //! `end_session` call reaches across into NodeRegistry to read node state
 //! and write reputation/earnings.
 
-use node_registry::NodeRegistryClient;
 use soroban_sdk::{
     contract, contracterror, contractimpl, contracttype, symbol_short, token, Address, Env, Vec,
 };
 
-#[derive(Clone, PartialEq)]
+mod node_registry_contract {
+    soroban_sdk::contractimport!(file = "../target/wasm32v1-none/release/node_registry.wasm");
+}
+use node_registry_contract::Client as NodeRegistryClient;
+
+#[derive(Clone, Debug, PartialEq)]
 #[contracttype]
 pub enum SessionStatus {
     Active,

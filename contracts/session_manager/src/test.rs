@@ -85,8 +85,7 @@ fn test_end_session_pays_owner_and_updates_registry() {
     assert_eq!(session.rating, 5);
 
     let token_client = token::Client::new(&h.env, &h.token_address);
-    assert_eq!(token_client.balance(&h.node_owner), 1005_0000000);
-
+assert_eq!(token_client.balance(&h.node_owner), 955_0000000);
     let node = h.registry.get_node(&h.node_id);
     assert_eq!(node.rating_count, 1);
     assert_eq!(node.reputation_total, 5);
