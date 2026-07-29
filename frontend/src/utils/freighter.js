@@ -40,7 +40,7 @@ export async function connectFreighter() {
   const networkRes = await getNetwork();
   if (networkRes?.network && networkRes.network !== EXPECTED_NETWORK) {
     throw new Error(
-      `Freighter is on ${networkRes.network}. Switch it to ${EXPECTED_NETWORK} to use VeilNet.`
+      `Freighter is on ${networkRes.network}. Switch it to ${EXPECTED_NETWORK} to use Meridian.`
     );
   }
 

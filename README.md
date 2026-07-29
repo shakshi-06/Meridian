@@ -1,8 +1,8 @@
-# VeilNet — Decentralized VPN on Stellar
+# Meridian — Decentralized VPN on Stellar
 
-**[Live Demo](https://veilnet.vercel.app)** | **[Demo Video](#)** | **[Stellar Explorer](https://stellar.expert/explorer/testnet)**
+**[Live Demo](https://meridian.vercel.app)** | **[Demo Video](#)** | **[Stellar Explorer](https://stellar.expert/explorer/testnet)**
 
-[![CI](https://github.com/shakshi-06/veilnet/actions/workflows/ci.yml/badge.svg)](https://github.com/shakshi-06/veilnet/actions/workflows/ci.yml)
+[![CI](https://github.com/shakshi-06/meridian/actions/workflows/ci.yml/badge.svg)](https://github.com/shakshi-06/meridian/actions/workflows/ci.yml)
 ![Stellar](https://img.shields.io/badge/Stellar-Testnet-blue)
 ![React](https://img.shields.io/badge/React-18-61DAFB)
 ![Tests](https://img.shields.io/badge/Tests-20%2B%20passing-brightgreen)
@@ -15,7 +15,7 @@ Commercial VPNs ask you to trust a single company with everything a VPN is suppo
 
 ## The Solution
 
-VeilNet moves the trust layer onto Stellar. Independent operators stake XLM collateral and list exit nodes on-chain through `NodeRegistry`. Users rent a node by the hour through `SessionManager`, which escrows payment and releases it only once the session ends — at which point the user's rating writes back into the node's public reputation. No company sits in the middle holding funds, logs, or a kill switch. The two contracts coordinate the whole lifecycle by calling each other directly.
+Meridian moves the trust layer onto Stellar. Independent operators stake XLM collateral and list exit nodes on-chain through `NodeRegistry`. Users rent a node by the hour through `SessionManager`, which escrows payment and releases it only once the session ends — at which point the user's rating writes back into the node's public reputation. No company sits in the middle holding funds, logs, or a kill switch. The two contracts coordinate the whole lifecycle by calling each other directly.
 
 ---
 
@@ -188,8 +188,8 @@ Every data-fetching panel (marketplace, sessions, provider, activity) has its ow
 ### Installation
 
 ```bash
-git clone https://github.com/shakshi-06/veilnet.git
-cd veilnet/frontend
+git clone https://github.com/shakshi-06/meridian.git
+cd meridian/frontend
 npm install
 cp .env.example .env   # fill in contract IDs after deploying, see DEPLOYMENT.md
 npm run dev
@@ -252,7 +252,7 @@ GitHub Actions runs on every push to `main` and on pull requests (`.github/workf
 ## Project Structure
 
 ```
-veilnet/
+meridian/
 ├── .github/workflows/ci.yml
 ├── contracts/
 │   ├── Cargo.toml                    Workspace

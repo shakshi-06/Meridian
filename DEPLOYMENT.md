@@ -29,7 +29,7 @@ Copy that `G...` address — that's your deployer account, already funded with t
 ## 2. Build the contracts
 
 ```powershell
-cd veilnet\contracts
+cd meridian\contracts
 cargo test --workspace          # confirm all 13 tests pass first
 cargo build --target wasm32-unknown-unknown --release
 ```
@@ -125,7 +125,7 @@ Then replace the placeholder lines in `README.md`'s Screenshots section with rea
 
 ```powershell
 npm install -g vercel   # if not already installed
-cd veilnet\frontend
+cd meridian\frontend
 vercel login
 vercel link
 vercel env add VITE_NODE_REGISTRY_CONTRACT_ID production
@@ -138,15 +138,15 @@ Grab the `https://....vercel.app` URL from the output — that's the Live Demo l
 
 ## 11. Push everything to GitHub
 
-You already have commits made locally as this was built. From the `veilnet` folder:
+You already have commits made locally as this was built. From the `meridian` folder:
 
 ```powershell
-git remote add origin https://github.com/shakshi-06/veilnet.git
+git remote add origin https://github.com/shakshi-06/meridian.git
 git branch -M main
 git push -u origin main
 ```
 
-If `veilnet` doesn't exist yet on your GitHub account, create it first at github.com/new (public, no README/gitignore/license — this repo already has them), then run the commands above.
+If `meridian` doesn't exist yet on your GitHub account, create it first at github.com/new (public, no README/gitignore/license — this repo already has them), then run the commands above.
 
 From here on, keep committing as you do the remaining work — updating the README with real contract IDs and screenshots, tweaking anything after testing — so your commit history naturally grows past 10. Small, real commits (`docs: add contract addresses and tx hash`, `docs: add screenshots`, `fix: correct XLM SAC id for testnet`) are better for the "10+ meaningful commits" requirement than one giant commit at the end.
 

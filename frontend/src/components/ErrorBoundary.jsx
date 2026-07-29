@@ -12,7 +12,7 @@ export default class ErrorBoundary extends Component {
 
   componentDidCatch(error, info) {
     // eslint-disable-next-line no-console
-    console.error('VeilNet crashed:', error, info);
+    console.error('Meridian crashed:', error, info);
   }
 
   render() {

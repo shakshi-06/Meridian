@@ -28,7 +28,7 @@ export default function Navbar({ activeView, onNavigate }) {
       <div className="container navbar-inner">
         <button className="navbar-brand" onClick={() => handleNav('home')}>
           <span className="navbar-mark" aria-hidden="true" />
-          <span>VeilNet</span>
+          <span>Meridian</span>
         </button>
 
         <nav className={`navbar-links ${menuOpen ? 'open' : ''}`}>

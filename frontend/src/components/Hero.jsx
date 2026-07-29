@@ -12,7 +12,7 @@ export default function Hero({ onEnter, nodeCount }) {
             single operator to trust.
           </h1>
           <p className="hero-sub">
-            VeilNet routes traffic through independently run exit nodes. Every node stakes
+            Meridian routes traffic through independently run exit nodes. Every node stakes
             collateral on-chain, every session is paid and rated on-chain, and no company sits in
             the middle holding logs or a kill switch.
           </p>

@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer-inner">
         <div>
-          <div className="footer-brand">VeilNet</div>
+          <div className="footer-brand">Meridian</div>
           <p className="footer-tagline">Independently run VPN nodes, coordinated by Soroban smart contracts.</p>
         </div>
         <div className="footer-links">
