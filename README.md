@@ -1,8 +1,8 @@
 # Meridian — Decentralized VPN on Stellar
 
-**[Live Demo](https://meridian.vercel.app)** | **[Demo Video](#)** | **[Stellar Explorer](https://stellar.expert/explorer/testnet)**
+**[Repo](https://github.com/shakshi-06/Meridian)** | **[Live Demo](https://meridian.vercel.app)** | **[Demo Video](#)** | **[Stellar Explorer](https://stellar.expert/explorer/testnet)**
 
-[![CI](https://github.com/shakshi-06/meridian/actions/workflows/ci.yml/badge.svg)](https://github.com/shakshi-06/meridian/actions/workflows/ci.yml)
+[![CI](https://github.com/shakshi-06/Meridian/actions/workflows/ci.yml/badge.svg)](https://github.com/shakshi-06/Meridian/actions/workflows/ci.yml)
 ![Stellar](https://img.shields.io/badge/Stellar-Testnet-blue)
 ![React](https://img.shields.io/badge/React-18-61DAFB)
 ![Tests](https://img.shields.io/badge/Tests-20%2B%20passing-brightgreen)
@@ -188,7 +188,7 @@ Every data-fetching panel (marketplace, sessions, provider, activity) has its ow
 ### Installation
 
 ```bash
-git clone https://github.com/shakshi-06/meridian.git
+git clone https://github.com/shakshi-06/Meridian.git
 cd meridian/frontend
 npm install
 cp .env.example .env   # fill in contract IDs after deploying, see DEPLOYMENT.md

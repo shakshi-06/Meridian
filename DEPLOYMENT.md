@@ -141,7 +141,7 @@ Grab the `https://....vercel.app` URL from the output — that's the Live Demo l
 You already have commits made locally as this was built. From the `meridian` folder:
 
 ```powershell
-git remote add origin https://github.com/shakshi-06/meridian.git
+git remote add origin https://github.com/shakshi-06/Meridian.git
 git branch -M main
 git push -u origin main
 ```
